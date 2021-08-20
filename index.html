@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,11 +20,107 @@
             border: 1px solid purple;
         }
     </style>
-    <title>Mac book pro</title>
+    <title>Mac Book Pro</title>
 </head>
 
 <body>
-   
+    <main>
+        <div class="container mx-auto px-4 md:px-2">
+            <div class="grid grid-cols-2">
+                <!-- Image -->
+                <div class="p-5 m-5">
+                    <div>
+                        <img class="h-96 w-96 ml-72" src="images/mac.png" id="art"
+                            class="w-50 h-50 rounded object-cover" alt="" />
+                    </div>
+                </div>
+                <!-- Options -->
+                <div class="mt-10 max-w-lg mx-auto mr-60">
+                    <h3 class="text-4xl font-bold mb-2">Customize your Blue 24-inch iMac with Apple M1 chip.</h3>
+                    <span id="desc" class="text-sm">The Apple M1 chip gives the 13‑inch MacBook Pro speed and power
+                        beyond belief. With up to 2.8x CPU performance. Up to 5x the graphics speed. Our most advanced
+                        Neural Engine for up to 11x faster machine learning. And up to 20 hours of battery life — the
+                        longest of any Mac ever.
+                    </span><br>
+                    <!-- select button for Memory  -->
+                    <div class="pt-10">
+                        <h2 class="font-bold mb-2">Memory</h2>
+                        <button id="memory-8gb"
+                            class="p-2 border border-gray-200 shadow hover:shadow-lg rounded hover:bg-gray-400">
+                            8GB unified memory
+                        </button>
+                        <button id="memory-16gb"
+                            class="p-2 border border-gray-200 shadow hover:shadow-lg rounded hover:bg-gray-400">
+                            16GB unified memory
+                        </button>
+                    </div>
+
+                    <!-- select button for Memory  -->
+                    <div class="pt-10">
+                        <h2 class="font-bold mb-2">Storage</h2>
+                        <button id="storage-256gb"
+                            class="p-2 border border-gray-200 shadow hover:shadow-lg rounded  hover:bg-gray-400">
+                            256GB SSD storage
+                        </button>
+                        <button id="storage-512gb" class="p-2 border border-gray-200 shadow hover:shadow-lg rounded
+                        hover:bg-gray-400">
+                            512GB SSD storage
+                        </button>
+                        <button id="storage-1tb" class="p-2 border border-gray-200 shadow hover:shadow-lg rounded
+                        hover:bg-gray-400">
+                            1TB SSD storage
+                        </button>
+                    </div>
+
+                    <!-- select button for delivery -->
+                    <div class="pt-10">
+                        <h2 class="font-bold mb-2">Choose your delivery option</h2>
+                        <button id="free"
+                            class="p-2 border border-gray-200 shadow hover:shadow-lg rounded hover:bg-gray-400">
+                            Friday, Aug 25 Free Prime delivery
+                        </button>
+                        <button id="fast"
+                            class="p-2 border border-gray-200 shadow hover:shadow-lg rounded hover:bg-gray-400">
+                            Friday, Aug 21 Delivery 20$
+                        </button>
+                    </div>
+
+                    <div class="font-bold text-sm-200 py-2 mt-16">
+                        Best Price:<span class="ml-44" id="price">1299</span>$
+                    </div>
+
+                    <div class="font-bold text-sm-200 py-2">
+                        Extra Memory Cost<span class="ml-28" id="memory-cost">0</span>$
+                    </div>
+
+                    <div class="font-bold text-sm-200 py-2">
+                        Extra Storage Cost <span class="ml-28" id="storage-cost">0</span>$
+                    </div>
+
+                    <div class="font-bold text-sm-200 py-2">
+                        Delivery Charge<span class="ml-36" id="shipping">0</span>$
+                    </div>
+
+                    <hr style="height:2px;width:65%;border-width:0;color:gray;background-color:gray">
+
+                    <div class="font-bold text-sm-200 py-2 divide-y-4 divide-black divide-opacity-25 ">
+                        Total Price<span class="ml-44" id="total">1299</span>$
+                    </div>
+                    <h2 class="mt-5 text-sm-100 font-bold">Add promo code</h2>
+                    <input class="border-black bg-red-200 px-5 py-1 mt-2" placeholder="">
+                    <button
+                        class="px-4 py-2 text-xl border border-purple-200 mt-2 mb-14 shadow rounded hover:shadow-xl hover:bg-gray-400">
+                        Apply
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="mb-20 ml-96">
+            <hr style="height:2px; width:50%;border-width:0;color:rgb(43, 41, 41);background-color:rgb(39, 37, 37)">
+        </div>
+    </main>
     <!-- Custom js -->
     <script src="main.js"></script>
 </body>
