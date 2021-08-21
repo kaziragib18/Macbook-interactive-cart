@@ -17,7 +17,7 @@
         }
 
         .selected {
-            border: 1px solid purple;
+            border: 2px solid rgb(30, 28, 139);
         }
     </style>
     <title>Mac Book Pro</title>
@@ -34,58 +34,60 @@
                             class="w-50 h-50 rounded object-cover" alt="" />
                     </div>
                 </div>
-                <!-- Options -->
+
                 <div class="mt-10 max-w-lg mx-auto mr-60">
                     <h3 class="text-4xl font-bold mb-2">Customize your Blue 24-inch iMac with Apple M1 chip.</h3>
-                    <span id="desc" class="text-sm">The Apple M1 chip gives the 13‑inch MacBook Pro speed and power
+                    <p class="text-sm">The Apple M1 chip gives the 13‑inch MacBook Pro speed and power
                         beyond belief. With up to 2.8x CPU performance. Up to 5x the graphics speed. Our most advanced
                         Neural Engine for up to 11x faster machine learning. And up to 20 hours of battery life — the
                         longest of any Mac ever.
-                    </span><br>
-                    <!-- select button for Memory  -->
-                    <div class="pt-10">
-                        <h2 class="font-bold mb-2">Memory</h2>
-                        <button id="memory-8gb"
-                            class="p-2 border border-gray-200 shadow hover:shadow-lg rounded hover:bg-gray-400">
-                            8GB unified memory
-                        </button>
-                        <button id="memory-16gb"
-                            class="p-2 border border-gray-200 shadow hover:shadow-lg rounded hover:bg-gray-400">
-                            16GB unified memory
-                        </button>
-                    </div>
+                    </p>
+                    <div id="accessory" >
+                        <!-- select button for Memory  -->
+                        <div  class="pt-10">
+                            <h2 class="font-bold mb-2">Memory</h2>
+                            <button id="memory-8gb"
+                                class="p-2 border border-gray-200 shadow hover:shadow-lg rounded hover:bg-gray-400">
+                                8GB unified memory
+                            </button>
+                            <button id="memory-16gb"
+                                class="p-2 border border-gray-200 shadow hover:shadow-lg rounded hover:bg-gray-400">
+                                16GB unified memory
+                            </button>
+                        </div>
 
-                    <!-- select button for Memory  -->
-                    <div class="pt-10">
-                        <h2 class="font-bold mb-2">Storage</h2>
-                        <button id="storage-256gb"
-                            class="p-2 border border-gray-200 shadow hover:shadow-lg rounded  hover:bg-gray-400">
-                            256GB SSD storage
-                        </button>
-                        <button id="storage-512gb" class="p-2 border border-gray-200 shadow hover:shadow-lg rounded
+                        <!-- select button for Memory  -->
+                        <div class="pt-10">
+                            <h2 class="font-bold mb-2">Storage</h2>
+                            <button id="storage-256gb"
+                                class="p-2 border border-gray-200 shadow hover:shadow-lg rounded  hover:bg-gray-400">
+                                256GB SSD storage
+                            </button>
+                            <button id="storage-512gb" class="p-2 border border-gray-200 shadow hover:shadow-lg rounded
                         hover:bg-gray-400">
-                            512GB SSD storage
-                        </button>
-                        <button id="storage-1tb" class="p-2 border border-gray-200 shadow hover:shadow-lg rounded
+                                512GB SSD storage
+                            </button>
+                            <button id="storage-1tb" class="p-2 border border-gray-200 shadow hover:shadow-lg rounded
                         hover:bg-gray-400">
-                            1TB SSD storage
-                        </button>
+                                1TB SSD storage
+                            </button>
+                        </div>
+
+                        <!-- select button for delivery -->
+                        <div class="pt-10">
+                            <h2 class="font-bold mb-2">Choose your delivery option</h2>
+                            <button id="free"
+                                class="p-2 border border-gray-200 shadow hover:shadow-lg rounded hover:bg-gray-400">
+                                Friday, Aug 25 Free Prime delivery
+                            </button>
+                            <button id="fast"
+                                class="p-2 border border-gray-200 shadow hover:shadow-lg rounded hover:bg-gray-400">
+                                Friday, Aug 21 Delivery 20$
+                            </button>
+                        </div>
                     </div>
 
-                    <!-- select button for delivery -->
-                    <div class="pt-10">
-                        <h2 class="font-bold mb-2">Choose your delivery option</h2>
-                        <button id="free"
-                            class="p-2 border border-gray-200 shadow hover:shadow-lg rounded hover:bg-gray-400">
-                            Friday, Aug 25 Free Prime delivery
-                        </button>
-                        <button id="fast"
-                            class="p-2 border border-gray-200 shadow hover:shadow-lg rounded hover:bg-gray-400">
-                            Friday, Aug 21 Delivery 20$
-                        </button>
-                    </div>
-
-                    <div class="font-bold text-sm-200 py-2 mt-16">
+                    <div class="font-bold text-sm-200 py-2 mt-10">
                         Best Price:<span class="ml-44" id="price">1299</span>$
                     </div>
 
@@ -106,22 +108,30 @@
                     <div class="font-bold text-sm-200 py-2 divide-y-4 divide-black divide-opacity-25 ">
                         Total Price<span class="ml-44" id="total">1299</span>$
                     </div>
-                    <h2 class="mt-5 text-sm-100 font-bold">Add promo code</h2>
-                    <input class="border-black bg-red-200 px-5 py-1 mt-2" placeholder="">
-                    <button
-                        class="px-4 py-2 text-xl border border-purple-200 mt-2 mb-14 shadow rounded hover:shadow-xl hover:bg-gray-400">
-                        Apply
-                    </button>
+
+                    <div id="add-promo">
+                        <!-- promo input -->
+                        <h2 class="mt-5 text-sm-100 font-bold">Add promo code</h2>
+                        <input id="promo-text" class="border-black shadow rounded mt-2"
+                            placeholder="Enter promo code">
+                        <button id="promo-apply"
+                            class="px-6 py-1 text-sm-200 text-white bg-red-500 border border-purple-200 mt-2 mb-2 shadow rounded hover:shadow-xl hover:bg-gray-400">
+                            Apply
+                        </button>
+                        <p id="error" class="text-sm-400 font-bold text-red-500 mt-2 mb-8"></p>
+                    </div>
 
                 </div>
-
             </div>
         </div>
-        <div class="mb-20 ml-96">
-            <hr style="height:2px; width:50%;border-width:0;color:rgb(43, 41, 41);background-color:rgb(39, 37, 37)">
+        <div class="mb-2 pl-44 ml-96">
+            <hr style="height:2px; width:50%;border-width:0;color:rgb(82, 79, 79);background-color:gray">
+        </div>
+        <div class="font-bold text-3xl py-2 mb-2 text-center divide-y-4 divide-black divide-opacity-25 ">
+            Total: $<span class="" id="total-bottom">1299</span>
         </div>
     </main>
-    <!-- Custom js -->
+    <!-- js file -->
     <script src="main.js"></script>
 </body>
 
