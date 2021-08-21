@@ -1,7 +1,6 @@
 //Default best price
 const price = document.getElementById('price');
 
-
 function isContain(element) {
     //return is class present
     return element.classList.contains('selected');
@@ -10,9 +9,7 @@ function isContain(element) {
 //Memory options
 const memory1 = document.getElementById('memory-8gb');
 const memory2 = document.getElementById('memory-16gb');
-
 const memoryField = document.getElementById('memory-cost');
-const totalOne = document.getElementById('total');
 
 memory1.addEventListener('click', function () {
     //Memory options highlighted with select border
@@ -36,9 +33,7 @@ memory2.addEventListener('click', function () {
 const storage1 = document.getElementById('storage-256gb');
 const storage2 = document.getElementById('storage-512gb');
 const storage3 = document.getElementById('storage-1tb');
-
 const storageField = document.getElementById('storage-cost');
-const totalTwo = document.getElementById('total');
 
 storage1.addEventListener('click', function () {
     //Storage options highlighted with select border
@@ -72,10 +67,9 @@ storage3.addEventListener('click', function () {
 //Delivery options
 const free = document.getElementById('free');
 const fast = document.getElementById('fast');
-
 const shippingField = document.getElementById('shipping');
-const newTotal = document.getElementById('total');
 
+const newTotal = document.getElementById('total');
 const bottomTotal = document.getElementById('total-bottom');
 
 const promoText = document.getElementById('promo-text');
@@ -83,7 +77,6 @@ const promoApply = document.getElementById('promo-apply');
 const addPromo = document.getElementById('add-promo');
 const errorMessege = document.getElementById('error');
 const accessory = document.getElementById('accessory');
-
 
 //delivery options highlighted with select border
 free.addEventListener('click', function () {
@@ -103,16 +96,19 @@ fast.addEventListener('click', function () {
     updateTotal();
 });
 
+//Promo code
 promoApply.addEventListener('click', function () {
     let promoValue = promoText.value;
     let totalValue = Number(bottomTotal.innerText);
     let finalTotal = Number(newTotal.innerText);
 
+//Display discount and error handling 
     if (promoValue == 'stevekaku' || promoValue == 'STEVEKAKU') {
         totalValue = totalValue * .20;
         totalValue = finalTotal - totalValue;
         bottomTotal.innerText = totalValue;
         addPromo.style.display = 'none';
+//div buttons/options > display hidden after using promo code
         accessory.style.display = 'none';
     }
     else {
