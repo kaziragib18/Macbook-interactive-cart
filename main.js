@@ -102,13 +102,13 @@ promoApply.addEventListener('click', function () {
     let totalValue = Number(bottomTotal.innerText);
     let finalTotal = Number(newTotal.innerText);
 
-//Display discount and error handling 
+    //Display discount and error handling 
     if (promoValue == 'stevekaku' || promoValue == 'STEVEKAKU') {
         totalValue = totalValue * .20;
         totalValue = finalTotal - totalValue;
         bottomTotal.innerText = totalValue;
         addPromo.style.display = 'none';
-//div buttons/options > display hidden after using promo code
+        //div buttons/options > display hidden after using promo code
         accessory.style.display = 'none';
     }
     else {
